@@ -4,106 +4,54 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
-<title>MKE Mental Health — Milwaukee mental health resources</title>
-<meta name="description" content="A free Milwaukee mental-health resource: what to do right now, while you wait for care. (Draft preview.)">
-<link rel="stylesheet" href="styles.css">
+<title>MKE Mental Health — coming soon</title>
+<meta name="description" content="A free Greater-Milwaukee mental-health resource, brought to you by Ellie Mental Health. Launching soon.">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&display=swap');
+  :root{
+    --navy:#245970; --teal:#0fe0d9; --mint:#a9fff8; --mint-soft:#e8fffd;
+    --coral:#ff6352; --ink:#364952; --muted:#5e7178;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:linear-gradient(180deg,var(--mint-soft),#fff);line-height:1.6;min-height:100vh;display:flex;flex-direction:column}
+  .head{font-family:"Poppins",-apple-system,"Segoe UI",sans-serif;letter-spacing:-.01em}
+  a{color:var(--navy)}
+  /* crisis bar */
+  .crisis{background:var(--navy);color:#dffbf9;font-size:14.5px;padding:9px 16px;text-align:center}
+  .crisis a{color:#fff;font-weight:700;text-decoration:underline}
+  .crisis .num{white-space:nowrap;font-weight:700;color:var(--teal)}
+  main{flex:1;display:flex;align-items:center;justify-content:center;padding:48px 20px;position:relative;overflow:hidden}
+  .shape{position:absolute;right:-90px;top:-70px;width:320px;height:320px;border-radius:42% 58% 57% 43%/45% 45% 55% 55%;background:radial-gradient(circle at 35% 35%,var(--teal),var(--mint));opacity:.22;pointer-events:none}
+  .shape2{position:absolute;left:-70px;bottom:-80px;width:240px;height:240px;border-radius:55% 45% 45% 55%/50% 55% 45% 50%;background:radial-gradient(circle at 60% 40%,var(--mint),#fff);opacity:.5;pointer-events:none}
+  .card{position:relative;z-index:1;max-width:660px;text-align:center}
+  .mark{display:inline-flex;align-items:center;gap:11px;font-weight:800;font-size:23px;color:var(--navy);margin-bottom:22px}
+  .dot{width:32px;height:32px;border-radius:50% 50% 50% 4px;background:linear-gradient(135deg,var(--teal),var(--navy))}
+  .pill{display:inline-block;background:#fff;border:1px solid #cfe6e3;color:var(--navy);font-weight:700;border-radius:999px;padding:7px 18px;font-size:14px;letter-spacing:.02em;margin-bottom:22px}
+  h1{font-size:clamp(30px,6vw,46px);line-height:1.12;color:var(--navy);margin:0 0 16px}
+  .lead{font-size:19px;color:var(--muted);margin:0 0 26px}
+  .contact{font-size:16px}
+  .contact a{font-weight:700}
+  footer{text-align:center;padding:22px 20px;color:var(--muted);font-size:13px}
+</style>
 </head>
 <body>
-<a class="skip" href="#main">Skip to content</a>
-
-<div class="draft"><b>DRAFT PREVIEW</b> — not an official resource yet. Content is placeholder and pending clinical review. Not for public sharing.</div>
-
 <div class="crisis">
   In crisis or thinking of suicide? <a href="tel:988">Call or text <span class="num">988</span></a> (Suicide &amp; Crisis Lifeline) ·
   Medical emergency? <a href="tel:911"><span class="num">911</span></a>
 </div>
-
-<header class="site-header">
-  <div class="wrap nav">
-    <a class="brand" href="index.html"><span class="dot"></span> MKE Mental Health</a>
-    <nav class="menu" aria-label="Primary">
-      <a href="while-you-wait.html">While You Wait</a>
-      <a href="learn.html">Learn</a>
-      <a href="find-care.html">Find Care</a>
-      <a href="resources.html">Milwaukee Resources</a>
-      <a href="about.html">About</a>
-      <a class="cta" href="get-help.html">Get Help Now</a>
-    </nav>
+<main>
+  <div class="shape"></div>
+  <div class="shape2"></div>
+  <div class="card">
+    <div class="mark head"><span class="dot"></span> MKE Mental Health</div>
+    <div><span class="pill">LAUNCHING SOON</span></div>
+    <h1 class="head">Free mental-health resources for Greater Milwaukee &mdash; on the way.</h1>
+    <p class="lead">A friendly place to start when you&rsquo;re waiting for care: practical things you can do today, plain-language guides, and where to find help locally. Brought to you by <strong>Ellie Mental Health</strong>.</p>
+    <p class="contact">Questions in the meantime? <a href="mailto:hello@mkementalhealth.com">hello@mkementalhealth.com</a></p>
   </div>
-</header>
-
-<main id="main">
-  <section class="hero">
-    <div class="wrap">
-      <h1>You reached out. Here's what you can do right&nbsp;now.</h1>
-      <p>A free Milwaukee resource for the time between deciding to get help and getting to a therapist — practical things you can do today, plain-language education, and where to find care locally.</p>
-      <div class="btns">
-        <a class="btn btn-primary" href="while-you-wait.html">Start here: While You Wait</a>
-        <a class="btn btn-ghost" href="get-help.html">I need help now</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="block">
-    <div class="wrap">
-      <h2>Find what you need</h2>
-      <p class="lead">However you got here, there's a place to start.</p>
-      <div class="cards">
-        <a class="card" href="get-help.html"><h3>Get Help Now</h3><p>Crisis lines, what to do in an emergency, and a quick self-check screening.</p></a>
-        <a class="card" href="while-you-wait.html"><h3>While You Wait</h3><p>Practical, do-it-today ways to cope while you wait for an appointment.</p></a>
-        <a class="card" href="learn.html"><h3>Learn</h3><p>Plain-language articles on anxiety, depression, grief, stress, sleep, and more.</p></a>
-        <a class="card" href="find-care.html"><h3>Find Care</h3><p>How therapy works, insurance basics, and how to connect with a provider in Milwaukee.</p></a>
-        <a class="card" href="resources.html"><h3>Milwaukee Resources</h3><p>Local support groups, helplines, and community organizations near you.</p></a>
-        <a class="card" href="about.html#workplaces"><h3>For Workplaces &amp; Leaders</h3><p>Support your team and reduce stigma at work — a resource you can share.</p></a>
-      </div>
-    </div>
-  </section>
-
-  <section class="block soft">
-    <div class="wrap">
-      <h2>Built for the wait</h2>
-      <p class="lead">Getting to a therapist takes time. This site is the bridge — something credible and free you can use the moment you decide to reach out, and a link anyone can hand to someone who needs it.</p>
-      <a class="btn btn-primary" href="while-you-wait.html">See what you can do today</a>
-    </div>
-  </section>
-
-  <section class="block">
-    <div class="wrap">
-      <h2>About this resource</h2>
-      <p class="lead">A free mental-health resource for the Greater Milwaukee community, brought to you by Ellie Mental Health. It is education, not therapy, and it does not collect any personal health information.</p>
-      <a href="about.html">More about who's behind it &rarr;</a>
-    </div>
-  </section>
 </main>
-
 <footer>
-  <div class="wrap">
-    <div class="cols">
-      <div>
-        <h4>MKE Mental Health</h4>
-        <p>Free mental-health education and resources for Greater Milwaukee.</p><p style="margin-top:8px">Brought to you by <a href="https://elliementalhealth.com" rel="noopener" target="_blank">Ellie Mental Health</a>.</p>
-      </div>
-      <div>
-        <h4>Get help</h4>
-        <ul>
-          <li>Crisis: call or text <strong>988</strong></li>
-          <li>Emergency: <strong>911</strong></li>
-          <li><a href="get-help.html">Get Help Now</a></li>
-          <li><a href="resources.html">Milwaukee Resources</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Explore</h4>
-        <ul>
-          <li><a href="while-you-wait.html">While You Wait</a></li>
-          <li><a href="learn.html">Learn</a></li>
-          <li><a href="find-care.html">Find Care</a></li>
-          <li><a href="about.html">About</a></li>
-        </ul>
-      </div>
-    </div>
-    <p class="disc">This site is a free educational resource — <strong>not therapy, medical advice, or a crisis service</strong>, and it does not collect personal health information. If you are in crisis, call or text <strong>988</strong>, or call <strong>911</strong>. &nbsp;|&nbsp; DRAFT — content pending clinical review; not for public distribution.</p>
-  </div>
+  Brought to you by <a href="https://elliementalhealth.com" rel="noopener" target="_blank">Ellie Mental Health</a>. &nbsp;|&nbsp; This page is not a crisis service &mdash; if you need help now, call or text <strong>988</strong>, or call <strong>911</strong>.
 </footer>
 </body>
 </html>
