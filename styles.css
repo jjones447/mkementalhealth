@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&display=swap');
 :root{
+  /* Official Ellie brand palette — Brand Standards Manual p.29 (core) + p.51 (duotone) */
+  --navy:#245970; --teal:#0fe0d9; --mint:#a9fff8;     /* core: Ellie Navy / Teal / Mint */
+  --green:#ced92b; --purple:#cc61c7; --coral:#ff6352; /* accents: Green / Purple / Red */
+  --teal-deep:#327d9b;                                /* duotone mid-navy (p.51) */
+  --mint-soft:#e8fffd;
+  /* semantic aliases (existing rules reference these) */
   --ink:#364952; --muted:#5e7178; --bg:#fff;
-  --primary:#245970; --primary-dark:#1a4357;
-  --bright:#0fe0d9; --mint:#a9fff8; --mint-soft:#e8fffd;
-  --coral:#ff6352; --coral-dark:#e8513f; --accent:#ff6352;
+  --primary:var(--navy); --primary-dark:#1a4357;
+  --bright:var(--teal); --coral-dark:#e8513f; --accent:var(--coral);
   --line:#cfe6e3; --crisis:#1a4357; --maxw:1080px; --radius:16px;
   --head:"Poppins",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
 }
@@ -37,7 +42,10 @@ h1,h2,h3,h4,.brand{font-family:var(--head);letter-spacing:-.01em}
 .menu a.cta:hover{background:var(--coral-dark)}
 
 /* hero */
-.hero{background:linear-gradient(180deg,var(--mint-soft),#fff);padding:64px 0 48px;border-bottom:1px solid var(--line)}
+.hero{position:relative;overflow:hidden;background:linear-gradient(180deg,var(--mint-soft),#fff);padding:64px 0 48px;border-bottom:1px solid var(--line)}
+/* Ellie rounded graphic-shape motif (Brand Standards p.46) — subtle, decorative */
+.hero::after{content:"";position:absolute;right:-90px;top:-70px;width:300px;height:300px;border-radius:42% 58% 57% 43%/45% 45% 55% 55%;background:radial-gradient(circle at 35% 35%,var(--teal),var(--mint));opacity:.22;pointer-events:none;z-index:0}
+.hero .wrap{position:relative;z-index:1}
 .hero h1{font-size:clamp(30px,5vw,48px);line-height:1.08;margin:0 0 14px;color:var(--primary)}
 .hero p{font-size:19px;color:var(--muted);max-width:640px;margin:0 0 26px}
 .btns{display:flex;gap:12px;flex-wrap:wrap}
@@ -58,7 +66,9 @@ h2{font-size:clamp(23px,3vw,32px);margin:0 0 8px;color:var(--primary)}
 .soft{background:var(--mint-soft)}
 
 /* content pages */
-.page-head{background:linear-gradient(180deg,var(--mint-soft),#fff);padding:48px 0 28px;border-bottom:1px solid var(--line)}
+.page-head{position:relative;overflow:hidden;background:linear-gradient(180deg,var(--mint-soft),#fff);padding:48px 0 28px;border-bottom:1px solid var(--line)}
+.page-head::after{content:"";position:absolute;right:-70px;top:-60px;width:220px;height:220px;border-radius:42% 58% 57% 43%/45% 45% 55% 55%;background:radial-gradient(circle at 35% 35%,var(--teal),var(--mint));opacity:.18;pointer-events:none;z-index:0}
+.page-head .wrap{position:relative;z-index:1}
 .page-head h1{font-size:clamp(28px,4vw,40px);margin:0 0 8px;color:var(--primary)}
 .page-head p{color:var(--muted);font-size:18px;margin:0;max-width:680px}
 .content{padding:40px 0;max-width:760px}
