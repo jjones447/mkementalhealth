@@ -1,8 +1,8 @@
 # MKE Mental Health — community resource site
 
-Static scaffold for **mkementalhealth.com** — a free Greater-Milwaukee mental-health resource (bridge-the-wait, shareable, low-stigma), an independent Greater Milwaukee resource (Ellie-adjacent, not directly affiliated).
+Static scaffold for **mkementalhealth.com** — a free Greater-Milwaukee mental-health resource (bridge-the-wait, shareable, low-stigma), brought to you by Ellie Mental Health.
 
-> **Status: DRAFT / private.** Content is placeholder and **pending clinical review**. Every page is `noindex,nofollow` and carries a draft banner. **Do not publish publicly** until the launch gates below are cleared. Full project spec lives in the PIP repo: `04-ventures/mke-mental-health-site/README.md`.
+> **Status: PUBLISHED as a noindex DRAFT preview** — public repo + GitHub Pages live at https://jjones447.github.io/mkementalhealth/ . Content is placeholder, **pending clinical review**; every page is `noindex,nofollow` with a draft banner. Clear the launch gates below before a real launch (remove noindex/banners, add the custom domain). Full project spec: PIP repo `04-ventures/mke-mental-health-site/README.md`.
 
 ## What's here
 Plain static HTML/CSS (no build step), modeled on mhanational.org / nami.org / namiwisconsin.org:
