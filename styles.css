@@ -10,6 +10,9 @@
   --primary:var(--navy); --primary-dark:#1a4357;
   --bright:var(--teal); --coral-dark:#e8513f; --accent:var(--coral);
   --line:#cfe6e3; --crisis:#1a4357; --maxw:1080px; --radius:16px;
+  /* TODO (Kelly, 6/19): swap to Ellie brand fonts — Final Six Black (headings),
+     Canban Bold Italic (sub-headings), Sophia Pro (third) — pending font files + licenses from Kelly.
+     Poppins is the interim stand-in (free Google approximation). */
   --head:"Poppins",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
 }
 *{box-sizing:border-box}
@@ -64,6 +67,16 @@ h2{font-size:clamp(23px,3vw,32px);margin:0 0 8px;color:var(--primary)}
 .card h3{margin:0 0 6px;font-size:19px;color:var(--primary)}
 .card p{margin:0;color:var(--muted);font-size:15.5px}
 .soft{background:var(--mint-soft)}
+
+/* therapist spotlight (Kelly 6/19 — switchable monthly) */
+.spotlight{display:flex;gap:24px;align-items:center;flex-wrap:wrap;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:24px}
+.spotlight-photo{flex:0 0 96px;width:96px;height:96px;border-radius:50% 50% 50% 8px;background:linear-gradient(135deg,var(--mint),var(--teal));display:flex;align-items:center;justify-content:center;font-size:44px}
+.spotlight-body{flex:1;min-width:240px}
+.spotlight-body h3{margin:0 0 6px;color:var(--primary);font-size:20px}
+.spotlight-body p{margin:0 0 14px;color:var(--muted)}
+
+/* inline placeholder marker (draft only — flags content pending clinical review / assets) */
+.ph-inline{display:inline-block;background:#fff8ee;border:1px dashed #e0b878;color:#7a4a10;font-size:12.5px;line-height:1.4;padding:1px 7px;border-radius:6px;margin-left:4px}
 
 /* content pages */
 .page-head{position:relative;overflow:hidden;background:linear-gradient(180deg,var(--mint-soft),#fff);padding:48px 0 28px;border-bottom:1px solid var(--line)}
