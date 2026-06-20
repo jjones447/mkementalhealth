@@ -1,0 +1,5 @@
+# MKE Mental Health — DRAFT, in clinical review. Not for public indexing yet.
+# When the site is cleared for public launch, remove the Disallow below
+# (and drop the noindex meta tags) to allow search engines.
+User-agent: *
+Disallow: /
