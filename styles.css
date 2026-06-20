@@ -37,7 +37,7 @@ h1,h2,h3,h4,.brand{font-family:var(--head);letter-spacing:-.01em}
 .site-header{border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(255,255,255,.96);backdrop-filter:blur(6px);z-index:50}
 .nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0;flex-wrap:wrap}
 .brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:21px;color:var(--primary);text-decoration:none}
-.brand .dot{width:28px;height:28px;border-radius:50% 50% 50% 4px;background:linear-gradient(135deg,var(--bright),var(--primary))}
+.brand .dot{width:34px;height:34px;background:url('assets/elephant-teal.png') center/contain no-repeat}
 .menu{display:flex;gap:18px;flex-wrap:wrap;align-items:center}
 .menu a{color:var(--ink);text-decoration:none;font-weight:600;font-size:15.5px}
 .menu a:hover{color:var(--primary)}
@@ -77,6 +77,8 @@ h2{font-size:clamp(23px,3vw,32px);margin:0 0 8px;color:var(--primary)}
 
 /* inline placeholder marker (draft only — flags content pending clinical review / assets) */
 .ph-inline{display:inline-block;background:#fff8ee;border:1px dashed #e0b878;color:#7a4a10;font-size:12.5px;line-height:1.4;padding:1px 7px;border-radius:6px;margin-left:4px}
+/* Ellie "brought to you by" logo (use on light backgrounds — the mark is navy) */
+.ellie-logo{height:48px;width:auto;display:block;margin:4px 0 2px}
 
 /* content pages */
 .page-head{position:relative;overflow:hidden;background:linear-gradient(180deg,var(--mint-soft),#fff);padding:48px 0 28px;border-bottom:1px solid var(--line)}
