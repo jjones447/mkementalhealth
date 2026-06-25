@@ -96,6 +96,25 @@
 
   <section class="block soft">
     <div class="wrap">
+      <h2>A moment to pause</h2>
+      <p class="lead">A little encouragement, and a gentle question to sit with this week.</p>
+      <div class="cards">
+        <div class="card">
+          <h3>Inspiration corner</h3>
+          <blockquote id="inspo-quote" style="margin:0;font-size:1.05rem;line-height:1.5">&ldquo;This too shall pass.&rdquo;</blockquote>
+          <p id="inspo-author" class="ph-inline" style="margin-top:8px">&mdash; proverb</p>
+        </div>
+        <div class="card">
+          <h3>Question of the week</h3>
+          <p id="qotw" style="font-size:1.05rem;line-height:1.5">How were you mindful this week?</p>
+          <p class="ph-inline" style="margin-top:8px">A prompt to reflect on &mdash; there's nothing to submit.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
       <h2>Built for the wait</h2>
       <p class="lead">Getting to a therapist takes time. This site is the bridge — something credible and free you can use the moment you decide to reach out, and a link anyone can hand to someone who needs it.</p>
       <a class="btn btn-primary" href="while-you-wait.html">See what you can do today</a>
@@ -142,5 +161,34 @@
     <p class="disc">This site is a free educational resource — <strong>not therapy, medical advice, or a crisis service</strong>, and it does not collect personal health information. If you are in crisis, call or text <strong>988</strong>, or call <strong>911</strong>. &nbsp;|&nbsp; Last updated: June 2026. &nbsp;|&nbsp; DRAFT — content pending clinical review; not for public distribution.</p>
   </div>
 </footer>
+
+<script>
+(function () {
+  var quotes = [
+    { q: "This too shall pass.", a: "proverb" },
+    { q: "Be kind, for everyone you meet is fighting a hard battle.", a: "Ian Maclaren" },
+    { q: "What lies behind us and before us are tiny matters compared to what lies within us.", a: "Ralph Waldo Emerson" },
+    { q: "Fall seven times, stand up eight.", a: "Japanese proverb" },
+    { q: "The best way out is always through.", a: "Robert Frost" },
+    { q: "No act of kindness, no matter how small, is ever wasted.", a: "Aesop" }
+  ];
+  var questions = [
+    "How were you mindful this week?",
+    "What do you look for in a therapist?",
+    "How do you know when a therapist is a good fit?",
+    "How do you know when you're feeling dysregulated?",
+    "What's the best mental-health resource you've found locally?",
+    "How do you take time to pause when you start to feel reactive?"
+  ];
+  function pick(a) { return a[Math.floor(Math.random() * a.length)]; }
+  var qq = pick(quotes);
+  var qEl = document.getElementById('inspo-quote'),
+      aEl = document.getElementById('inspo-author'),
+      wEl = document.getElementById('qotw');
+  if (qEl) { qEl.textContent = '“' + qq.q + '”'; }
+  if (aEl) { aEl.textContent = '— ' + qq.a; }
+  if (wEl) { wEl.textContent = pick(questions); }
+})();
+</script>
 </body>
 </html>
