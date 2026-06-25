@@ -180,14 +180,15 @@
     "What's the best mental-health resource you've found locally?",
     "How do you take time to pause when you start to feel reactive?"
   ];
-  function pick(a) { return a[Math.floor(Math.random() * a.length)]; }
-  var qq = pick(quotes);
+  // "of the week": deterministic weekly rotation — same for everyone, changes once a week.
+  var week = Math.floor(Date.now() / 604800000);
+  var qq = quotes[week % quotes.length];
   var qEl = document.getElementById('inspo-quote'),
       aEl = document.getElementById('inspo-author'),
       wEl = document.getElementById('qotw');
   if (qEl) { qEl.textContent = '“' + qq.q + '”'; }
   if (aEl) { aEl.textContent = '— ' + qq.a; }
-  if (wEl) { wEl.textContent = pick(questions); }
+  if (wEl) { wEl.textContent = questions[(week + 2) % questions.length]; }
 })();
 </script>
 </body>
