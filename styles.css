@@ -101,3 +101,10 @@ footer li{margin:5px 0}
 footer .cols{display:grid;grid-template-columns:2fr 1fr 1fr;gap:30px}
 footer .disc{margin-top:24px;padding-top:18px;border-top:1px solid #2c5560;color:#9ec6c0;font-size:13px}
 @media(max-width:640px){footer .cols{grid-template-columns:1fr}.menu{gap:12px;font-size:14px}}
+
+/* Section icons (2026-08-11) — a brand glyph anchors every section heading, so each
+   section reads as its own block without stock photography of strangers. */
+h2.sec{display:flex;align-items:center;gap:12px}
+.sec-ico{flex:none;display:grid;place-items:center;width:42px;height:42px;border-radius:12px;background:var(--mint-soft);border:1px solid var(--line);color:var(--primary)}
+.sec-ico svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}
+@media(max-width:520px){.sec-ico{width:36px;height:36px;border-radius:10px}.sec-ico svg{width:19px;height:19px}}
